@@ -3,7 +3,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import cartWidget from '../cartWidget/cartWidget';
+import CartWidget from '../cartWidget/cartWidget';
 
 function BasicExample() {
   return (
@@ -17,8 +17,7 @@ function BasicExample() {
             <Nav.Link href="#link">Celualres</Nav.Link>
             <Nav.Link href="#link">Tabltes</Nav.Link>
             <Nav.Link href="#link">notebooks</Nav.Link>
-            <Nav.Link href="#link"><cartWidget /></Nav.Link>
-            <cartWidget />
+            <CartWidget />
           </Nav>
         </Navbar.Collapse>
       </Container>
