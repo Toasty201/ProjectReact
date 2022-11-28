@@ -1,10 +1,9 @@
 import './Navbar.css'
 import React from 'react'
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import cartWidget from '../cartWidget/cartWidget';
 
 function BasicExample() {
   return (
@@ -18,7 +17,8 @@ function BasicExample() {
             <Nav.Link href="#link">Celualres</Nav.Link>
             <Nav.Link href="#link">Tabltes</Nav.Link>
             <Nav.Link href="#link">notebooks</Nav.Link>
-            <Nav.Link href="#link">Login</Nav.Link>
+            <Nav.Link href="#link"><cartWidget /></Nav.Link>
+            <cartWidget />
           </Nav>
         </Navbar.Collapse>
       </Container>
