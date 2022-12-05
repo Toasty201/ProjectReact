@@ -13,19 +13,19 @@ const Counter = ({ onAdd, initial, stock }) => {
     };
   
     return (
-      <div className="count-container">
-        <div className="count-container__contador">
-          <button className="count-container__button" onClick={() => addProduct(-1)} disabled={qty === initial} /*esta funcion de HTML  deshabilita el boton al llegar al stock!!, es excelente */> 
+      <div className="">
+        <div className="">
+          <button className="" onClick={() => addProduct(-1)} disabled={qty === initial} /*esta funcion de HTML  deshabilita el boton al llegar al stock!!, es excelente */> 
             -
           </button>
-          <span className="count-container__qty">{qty}</span>
-          <button className="count-container__button" onClick={() => addProduct(+1)}  disabled={qty === stock}> 
+          <span className="">{qty}</span>
+          <button className="" onClick={() => addProduct(+1)}  disabled={qty === stock}> 
             +
           </button>
         </div>
   
         <button
-          className="button-primary"
+          className=""
           onClick={() => {
             onAdd(qty);
           }}
